@@ -1,0 +1,53 @@
+AUTHOR: CHRISTIANA TEMIOLA
+TITLE: LAB 6:PRODUCER-CONSUMER
+FILENAME: README.txt
+DATE: 22ND NOVEMBER 2019
+
+PROJECT LICENCE:
+http://www.gnu.org/licenses/gpl-3.0.txt
+
+
+DESCRIPTION:
+This file explains what this project(lab) is all about. The aim of this project is to create a program that has two parts; A producer and a consumer.
+
+The producer generates random characters from ‘a’ to ‘z’ at random
+intervals (between 0 and 1 second in length). It adds these to a thread
+safe buffer that has a finite holding capacity of N characters. It generates
+a preset number of characters (determined at runtime) and when it has
+finished it add an ‘X’ character to the buffer and exits.
+
+The consumer takes these letters from the buffer at random time
+intervals (between 0 and 1 second in length) and records how many of each
+letter it consumes. Once it sees an ‘X’ in the buffer it adds its character
+count to a central buffer and exits.
+
+
+This project uses the following files in order to achieve the aim stated above:
+
+1. Semaphore.h: This is the header file for the Semaphore class.
+
+2. Semaphore.cpp: This is the implementation file for the Semaphore class.
+
+3. SafeBuffer.cpp: This is the implementation file for the SafeBuffer class.
+
+4. SafeBuffer.h: This is the header file for the SafeBuffer class. 
+
+5. main.cpp: The main function file. It must create at least two threads to demo             nstrate producer-consumer in action.
+
+6. Makefile: This is the project file which contains rules that tell the system              how to compile the code and produce a working executable called pro             dCon.
+
+7. Doxyfile: This file contains the settings for the Doxygen tool. It is generat             ed by the Doxygen program when run for the first time.
+
+8. README: This is a text file which describes the project.
+
+
+a) To compile the code: At the terminal, run the command below:
+     make and press the enter key.
+ 
+b) To execute it, run the command below:
+     ./main and press the enter key.
+
+c) To generate documentation, run the command below :
+     doxygen and press the enter key.
+
+
